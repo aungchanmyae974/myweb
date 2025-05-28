@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated background -->
+  <div id="particles-js"></div>
+
+  <!-- Header with photo and email -->
+  <header class="hero-section">
+    <div class="hero-photo">
+      <img src="images/profile.jpeg" alt="Aung Chan Myae" class="profile-photo-portrait" />
+    </div>
+    <div class="hero-content">
+      <h1>Aung Chan Myae</h1>
+      <p class="email">📧 <a href="mailto:aungchanmyae974@gmail.com">aungchanmyae974@gmail.com</a></p>
+      <p class="intro">
+        I was born in Myanmar and moved to Japan in 2015. After arriving, I studied at a Japanese language school, then continued my education at Sundai College in Ochanomizu.
+        <br><br>
+        I'm passionate about technology, especially in IT. I began learning HTML and CSS around October or November 2024, and started learning Python in March 2025.
+      </p>
+    </div>
+  </header>
+
+  <div class="container">
+    <section id="projects" class="fade-in">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Hangman Game:</strong> Python CLI-based word guessing game.</li>
+        <li><strong>To-do App:</strong> Simple Flask app to manage tasks.</li>
+        <li><strong>Weather Web App:</strong> Scrapes weather data using Python.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="fade-in">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:aungchanmyae974@gmail.com" class="email-link">aungchanmyae974@gmail.com</a></p>
+
+      <div class="social-links">
+        <a href="https://www.instagram.com/aungchanmyae47" target="_blank" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/aung.chan.104/" target="_blank" class="social-icon">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/aung-chan-myae-178664266/" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Aung Chan Myae</p>
+  </footer>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 60 },
+        "size": { "value": 3 },
+        "color": { "value": "#00bfff" },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#00bfff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": { "enable": true, "speed": 2 }
+      },
+      "interactivity": {
+        "events": {
+          "onhover": { "enable": true, "mode": "repulse" }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+
+</body>
+</html>
